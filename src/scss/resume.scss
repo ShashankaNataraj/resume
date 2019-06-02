@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Raleway&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css');
+
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0;
+  }
+}
+
+@media (min-width: 550px) {
+  .container {
+    width: 80%;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+  font-size: 1.5em;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
+  sans-serif;
+  color: #222;
+}
+
+.icon {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: 0.2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center-align {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.row {
+  padding: 10px;
+}
+
+.row h5 {
+  margin-bottom: -10px;
+}
+
+i[class^="devicon-"] {
+  font-size: 20px;
+}
+
+header h1 {
+  text-shadow: 1px 1px #3c3c3c;
+  font-family: "Lobster", cursive;
+  margin: 0px;
+  font-size: 5rem;
+}
+
+header.header {
+  background-color: #253649;
+  color: #E5DACC;
+}
+
+header {
+  &.sub-header {
+    background-color: #354E69;
+    color: #E5DACC;
+    &.row {
+      padding: 10px;
+    }
+  }
+}
+
+.container {
+  margin-top: 20px;
+  .row {
+    background-color: #fff;
+  }
+}
+
+.skill-icons {
+  word-wrap: break-word;
+  i {
+    padding: 10px;
+  }
+}
+
+.workplaces,
+.education {
+  margin-bottom: -10px;
+}
+
+.workplaces .workplace .tenure,
+.workplaces .school .tenure,
+.education .workplace .tenure,
+.education .school .tenure {
+  font-size: 12px;
+}
+
+.workplaces .workplace .award,
+.workplaces .school .award,
+.education .workplace .award,
+.education .school .award {
+  background-color: #253649;
+  color:white;
+  text-align: center;
+  font-size: 12px;
+  margin: 0 auto;
+  width: 70%;
+  margin-top: 5px;
+}
+
+.workplaces .workplace .job-description,
+.workplaces .school .job-description,
+.education .workplace .job-description,
+.education .school .job-description {
+
+}
+
+.workplaces .workplace hr,
+.workplaces .school hr,
+.education .workplace hr,
+.education .school hr {
+  margin: 5px;
+}
+
+.float-right {
+  float: right;
+}
+
+footer {
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 12px;
+  background-color:#354E69;
+}
+
+.heart {
+  color: white;
+}
+
+li {
+  list-style-position: outside;
+}
+
+.social-icons i {
+  padding: 10px;
+  color: #ff9784;
+  font-size: 20px;
+}
+
+a.link {
+  color: white;
+  &:hover {
+    color: white;
+  }
+}
+
+hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.stats .stats-highlight {
+  background-color: #eae8e8;
+  font-style: italic;
+}
+
+.stats .disclaimer {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+@media screen and (max-device-width: 480px) {
+  .row h5 {
+    margin-bottom: 15px;
+  }
+  ul {
+    list-style: none;
+    text-align: center;
+  }
+  .award {
+    width: 120px;
+    border-radius: 10px;
+  }
+  .job-description {
+    margin-top: 10px;
+  }
+  .skill-icons {
+    margin-left: 0px;
+    word-wrap: break-word;
+  }
+  .skill-icons i {
+    width: 25%;
+    margin-left: 2rem;
+  }
+  .social-icons {
+    margin-left: 0rem;
+  }
+}
+
+@media (min-width: 641px) {
+  i[class^="devicon-"]:first-child {
+    margin: 0px;
+    margin-left: 4%;
+  }
+}
+
+@media (max-width: 1024px) {
+  i[class^="devicon-"]:first-child {
+    margin: 0px;
+    margin-left: 4%;
+  }
+}
+
+
+.open-source-contributions ul {
+  margin-left: 10px;
+}
+
+.open-source-contributions ul li {
+  text-align: left;
+  padding:5px;
+  margin-left:.7em;
+}
+.title{
+  padding:.5em;
+  text-align:center;
+  border-bottom:.07em dashed lightgray;
+}
+.content{
+  padding:1.5em;
+}
+.mini-title{
+  font-weight:bolder;
+}
+.mini-list{
+  margin-left:1.5em;
+}
