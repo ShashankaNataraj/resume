@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster|Raleway&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css');
-
+@import "./media-queries";
 
 .container {
   position: relative;
@@ -17,19 +17,6 @@
   width: 100%;
   float: left;
   box-sizing: border-box;
-}
-
-@media (min-width: 400px) {
-  .container {
-    width: 85%;
-    padding: 0;
-  }
-}
-
-@media (min-width: 550px) {
-  .container {
-    width: 80%;
-  }
 }
 
 html {
@@ -204,49 +191,6 @@ hr {
   font-size: 1rem;
   margin-top: 1rem;
 }
-
-@media screen and (max-device-width: 480px) {
-  .row h5 {
-    margin-bottom: 15px;
-  }
-  ul {
-    list-style: none;
-    text-align: center;
-  }
-  .award {
-    width: 120px;
-    border-radius: 10px;
-  }
-  .job-description {
-    margin-top: 10px;
-  }
-  .skill-icons {
-    margin-left: 0px;
-    word-wrap: break-word;
-  }
-  .skill-icons i {
-    width: 25%;
-    margin-left: 2rem;
-  }
-  .social-icons {
-    margin-left: 0rem;
-  }
-}
-
-@media (min-width: 641px) {
-  i[class^="devicon-"]:first-child {
-    margin: 0px;
-    margin-left: 4%;
-  }
-}
-
-@media (max-width: 1024px) {
-  i[class^="devicon-"]:first-child {
-    margin: 0px;
-    margin-left: 4%;
-  }
-}
-
 
 .open-source-contributions ul {
   margin-left: 10px;
